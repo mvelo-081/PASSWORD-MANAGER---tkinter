@@ -1,15 +1,33 @@
-# PASSWORD-MANAGER
+# Password Manager App
 
-- This is a password manager app written in python using tkinter GUI library
-  
-- Responsible for generating unhackable password for a user and store them for that user
-  
-- The user first create an account , then after the his account has been created locally , the password entered will be used to encrypts his/her password which will be generated & encrypted and then store on a txt file locally.
-  
-- The user can retrieve the decrypted passwords by providing the correct password for his account , then enter an account name in order for the system to retrieve the encrypted stored password to decrypt it and display it
+A secure and user-friendly **Password Manager** built with **Python** and the **Tkinter GUI library**. This app allows users to generate, encrypt, store, and retrieve strong passwords locally — without storing any master password on disk.
 
-- This system is a bit safe because the password of the user is not stored locally
+## Features
 
-- Now I am currently working in using AES salt to encrypt the users passwords && login pin because it is stored locally
+- **Account System**: Users create an account with a master password (used for encryption/decryption).
+- **Secure Password Generation**: Automatically generates strong, unhackable passwords.
+- **Local Encryption**: All passwords are encrypted and stored locally in a `.txt` file.
+- **Decryption on Demand**: Users can retrieve their passwords by entering their master password and account name.
+- **Master Password is Never Stored**: User credentials are not stored anywhere to improve security.
+- **In-Progress**: Integration of **AES encryption with salt** to enhance local security of stored data.
 
-- This project have helped me also in learning on how to develop object orientated GUI classes in python 
+## Technologies Used
+
+- **Python 3**
+- **Tkinter** (GUI)
+- **Cryptography / hashlib** for encryption
+- **Object-Oriented Programming** for modular and maintainable code
+
+## What I Learned
+
+This project helped me:
+- Understand **secure local storage** and encryption techniques
+- Implement **object-oriented design patterns** in GUI development
+- Manage **user authentication flows** without exposing credentials
+- Work with **file handling** and **symmetric encryption**
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/password-manager.git
